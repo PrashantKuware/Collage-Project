@@ -1,0 +1,255 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box ;
+}
+
+:root {
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+    --padding-inline-section: 20px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-text-color);
+}
+
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* Utility-Classes */
+
+.small-bold-text {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.container {
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+    overflow: hidden;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    
+}
+
+.hover-links {
+    color: var(--primary-text-color);
+    transition: 0.2s ease-out;
+}
+
+.hover-links:hover {
+    color: var(--accent-color);
+}
+.primary-button{
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: white !important;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.2s ease-out;
+    text-align: center;
+}
+.primary-button:hover{
+background-color: var(--accent-color-dark);
+}
+.secondary-button{
+    border: 0.5px solid var(--secondary-text-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: var(--primary-text-color) !important;
+    padding: 12px 24px;
+    transition: 0.2s ease-out;
+}
+.secondary-button:hover{
+    border-color: var(--accent-color);
+    color: var(--accent-color) !important;
+}
+
+
+/* top banner */
+
+.top-banner {
+    background-image: url('../asset 32.png');
+    background-color: #4fb3d4;
+    background-size: 300px;
+}
+
+.banner-text {
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+}
+
+/* navbar start */
+
+.main-nav {
+    margin-top: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.company-logo img {
+    width: 200px;
+}
+
+.nav-links {
+    flex-basis: 730px;
+}
+
+.nav-links ul {
+    justify-content: end;
+    gap: 40px;
+}
+.nav-toggle{
+    display: none;
+}
+
+/* navbar end */
+
+body{
+    font-family:  'Lato', sans-serif;
+}
+.outer-box {
+    width: 100vw;
+    height: 80vh;
+    /* background: linear-gradient(to top left, #3ed8ff,#a8f5ff); */
+}
+
+/* main search area start */
+
+.inner-box {
+    width: 400px;
+    margin: 0 auto;
+    /* position: relative;
+    top: 50%; */
+    position: absolute;
+    top: 475px;
+    left: 300px;
+    transform: translateY(-50%);
+    padding: 20px 40px;
+    background-color: #4fb3d458;
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #195075;
+    z-index: 1;
+}
+
+.search-header h1 {
+    font-size: 2.5rem;
+    color: #212121;
+}
+
+.search-body {
+    margin: 20px 0;
+}
+
+.search-body label {
+    display: block;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+
+.search-body select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-top: 4px;
+}
+
+.hospital-logo img {
+    max-width: 40%;
+    position: absolute;
+    top: 235px;
+    left: 800px;
+    
+}
+
+/* .inner-box ul {
+    padding-left: 0;
+} */
+
+.inner-box ul li {
+    margin: 10px 0;
+    display: inline-block; /* Changed from inline to inline-block */
+    padding-inline-start: 40px; /* Changed padding-inline to padding-inline-start */
+}
+.drop-bar{
+    align-items: flex-start;
+    padding: 5px;
+    flex-direction: column;    
+}
+
+
+/* Footer Start */
+
+footer{
+    padding: 80px;
+    background-color: #ebf2fa;
+    
+ }
+ .link-column{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+ }
+ .footer-container{
+    align-items: flex-start;
+    justify-content: space-between;
+ }
+
+ /* subfooter Start */
+ .subfooter{
+    background-color: #b9cde4;
+    padding: var(--padding-inline-section);
+   
+ }
+ .subfooter-container{
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+ }

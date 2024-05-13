@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Hospitals</title>
+    <link rel="stylesheet" href="searcharea.css">
+</head>
+
+<body>
+    <!-- Top banner start  -->
+
+    <div class="top-banner">
+        <div class="container">
+            <div class="small-bold-text banner-text">We welcome new patients from all communities and look forward to
+                seeing you at one of our clinics</div>
+        </div>
+    </div>
+
+    <!-- navbar Start -->
+    <nav>
+        <div class="container main-nav flex">
+            <a href="#" class="company-logo">
+                <img src="logo112.png" alt="company-logo">
+            </a>
+            <div class="nav-links" id="nav-links">
+                <ul class="flex">
+                    <li><a href="#" class="hover-links">Home</a></li>
+                    <li><a href="#" class="hover-links">About Us</a></li>
+                    <li><a href="#" class="hover-links">Hospitals</a></li>
+                    <li><a href="#" class="hover-links">Schems</a></li>
+                    <li><a href="#" class="hover-links primary-button">Sign-Up</a></li>
+                    <li><a href="#" class="hover-links secondary-button">Feedback</a></li>
+                </ul>
+            </div>
+            <a href="#" class="nav-toggle hover-
+            link" id="nav-toggle"><i class="fa-solid fa-bars"></i></a>
+        </div>
+    </nav>
+
+    <!-- Search Body Start -->
+
+    <div class="outer-box">
+        <div class="inner-box">
+            <header class="search-header">
+                <h1>Search Hospitals</h1>
+            </header>
+
+            <form class="search-body">
+                <div class="drop-bar">
+                    <label for="inputState">State</label>
+                    <select class="form-control" id="inputState">
+                        <option value="SelectState">Select</option>
+                        <option value="Andra Pradesh">Andra Pradesh</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Madya Pradesh">Madya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Orissa">Orissa</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttaranchal">Uttaranchal</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="West Bengal">West Bengal</option>
+                        <option disabled style="background-color:#aaa; color:#fff">UNION Territories</option>
+                        <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                        <option value="Chandigarh">Chandigarh</option>
+                        <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                        <option value="Daman and Diu">Daman and Diu</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Lakshadeep">Lakshadeep</option>
+                        <option value="Pondicherry">Pondicherry</option>
+                    </select>
+                </div>
+                <div class="drop-bar flex">
+                    <label for="inputDistrict">District</label>
+                    <select class="form-control" id="inputDistrict">
+                        <option value="">Select </option>
+                    </select>
+                </div>
+                <div class="drop-bar flex">
+
+                    <label for="hospitaltype">Hospital Type</label>
+                    <select name="Hospital Type" id="hospitaltype">
+                        <option value="Select">Select</option>
+                        <option value="Public">Public</option>
+                        <option value="Private(Not For Profit)">Private(Not For Profit)</option>
+                        <option value="Private(For Profit)">Private(For Profit)</option>
+                    </select>
+                </div>
+                <div class="drop-bar flex">
+
+                    <label for="speciality">Speciality</label>
+                    <select name="Speciality" id="speciality">
+                        <option value="Select">Select</option>
+                        <option value="BM">BM-Burns Managemnet</option>
+                        <option value="CP">CP-Consultations &amp; Procedures</option>
+                        <option value="ER">ER-Emergency Room Packages (Care requiring less than 12 hrs stay)</option>
+                        <option value="IA">IA-Name of Investigation</option>
+                        <option value="IB">IB-Laboratory Medicine</option>
+                        <option value="IC">IC-Nutritional Markers</option>
+                        <option value="ID">ID-Infectious Diseases</option>
+                        <option value="IE">IE-Hormones</option>
+                        <option value="IF">IF-USG, X - Ray, CT, MRI, Bone Densitometry</option>
+                        <option value="IG">IG-X - Ray</option>
+                        <option value="IH">IH-X - Ray Contrast Studies</option>
+                        <option value="II">II-Mammography</option>
+                        <option value="IJ">IJ-CT</option>
+                        <option value="IK">IK-MRI</option>
+                        <option value="IL">IL-Bone Densitometry (Dexa Scan)</option>
+                        <option value="IM">IM-Neurological investigations and procedures</option>
+                        <option value="IMP">IMP-Implants</option>
+                        <option value="IN">IN-Interventional Neuroradiology</option>
+                        <option value="IO">IO-Tests in Gastro-enterology</option>
+                        <option value="IP">IP-Tests in Endocrinology (In Addition to those included under Hormones)
+                        </option>
+                        <option value="IQ">IQ-CSF</option>
+                        <option value="JR">JR-Joint Replacement</option>
+                        <option value="M1">M1-General Medicine</option>
+                        <option value="M10">M10-OPD Diagnostic</option>
+                        <option value="M2">M2-Paediatric medical management</option>
+                        <option value="M3">M3-Neo-natal</option>
+                        <option value="M4">M4-Paediatric cancer</option>
+                        <option value="M5">M5-Medical Oncology</option>
+                        <option value="M6">M6-Radiation Oncology</option>
+                        <option value="M7">M7-Emergency Room Packages (Care requiring less than 12 hrs stay)</option>
+                        <option value="M8">M8-Mental Disorders Packages</option>
+                        <option value="MA">MA-Treatment Procedure Skin</option>
+                        <option value="MB">MB-Biopsies</option>
+                        <option value="MC">MC-Cardiology</option>
+                        <option value="MD">MD-Treatment procedure ICU / CCU procedures (Special Care Cases)</option>
+                        <option value="ME">ME-Treatment procedure Physiotherapy</option>
+                        <option value="MF">MF-Nuclear Medicine / Brachytherapy - High Dose Radiation</option>
+                        <option value="MG">MG-General Medicine</option>
+                        <option value="MJ">MJ-Nuclear Medicine / Chemotherapy</option>
+                        <option value="MK">MK-List of procedures / Tests in Gastroenterology / Endoscopic procedures
+                        </option>
+                        <option value="MM">MM-Mental Disorders Packages</option>
+                        <option value="MN">MN-Neo-natal care Packages</option>
+                        <option value="MO">MO-Medical Oncology</option>
+                        <option value="MP">MP-Paediatric Medical Management</option>
+                        <option value="MQ">MQ-Nuclear Medicine / Radiotherapy and Chemotherapy</option>
+                        <option value="MR">MR-Radiation Oncology</option>
+                        <option value="NA">NA-Paediatric Cancer</option>
+                        <option value="OA">OA-Others</option>
+                        <option value="OC">OC-OPD - Consultations, Procedures &amp; Investigations</option>
+                        <option value="OT">OT-Organ &amp; Tissue transplant</option>
+                        <option value="PH">PH-Preventive Health Check Up</option>
+                        <option value="S1">S1-General Surgery</option>
+                        <option value="S10">S10-Plastic &amp; reconstructive</option>
+                        <option value="S11">S11-Burns management</option>
+                        <option value="S12">S12-Cardiology</option>
+                        <option value="S13">S13-Cardio-thoracic &amp; Vascular surgery</option>
+                        <option value="S14">S14-Paediatric surgery</option>
+                        <option value="S15">S15-Surgical Oncology</option>
+                        <option value="S16">S16-Oral and Maxillofacial Surgery</option>
+                        <option value="S2">S2-Otorhinolaryngology</option>
+                        <option value="S3">S3-Opthalmology</option>
+                        <option value="S4">S4-Obstetrics &amp; Gynaecology</option>
+                        <option value="S5">S5-Orthopaedics</option>
+                        <option value="S6">S6-Polytrauma</option>
+                        <option value="S7">S7-Urology</option>
+                        <option value="S8">S8-Neurosurgery</option>
+                        <option value="S9">S9-Interventional Neuroradiology</option>
+                        <option value="SA">SA-Treatment procedure Head &amp; Neck</option>
+                        <option value="SB">SB-Orthopaedics</option>
+                        <option value="SC">SC-Surgical Oncology</option>
+                        <option value="SD">SD-Treatment procedure Oesophagus</option>
+                        <option value="SE">SE-Opthalmology</option>
+                        <option value="SF">SF-Treatment procedure Abdomen / GI Surgery</option>
+                        <option value="SG">SG-General Surgery</option>
+                        <option value="SH">SH-Treatment Procedure Burns and Plastic Surgery</option>
+                        <option value="SI">SI-Treatment Procedure Nephrology and Urology</option>
+                        <option value="SJ">SJ-Head and Neck cancer</option>
+                        <option value="SK">SK-Treatment Procedure Breast</option>
+                        <option value="SL">SL-Otorhinolaryngology</option>
+                        <option value="SM">SM-Oral and Maxillofacial Surgery</option>
+                        <option value="SN">SN-Neurosurgery</option>
+                        <option value="SO">SO-Obstetrics &amp; Gynaecology</option>
+                        <option value="SP">SP-Plastic &amp; reconstructive Surgery</option>
+                        <option value="SS">SS-Paediatric surgery</option>
+                        <option value="ST">ST-Polytrauma</option>
+                        <option value="SU">SU-Urology</option>
+                        <option value="SV">SV-Cardio-thoracic &amp; Vascular Surgery</option>
+                        <option value="TG">TG-Gender Affirming Medical and Surgical Treatments</option>
+                        <option value="UP">UP-Unspecified Package</option>
+                    </select>
+                </div>
+            </form>
+
+            <ul>
+                <li><a href="#" class="hover-links primary-button">Submit</a></li>
+                <li><a href="#" class="hover-links primary-button" onclick="clearInput()" type="reset">Reset</a></li>
+            </ul>
+        </div>
+        <div class="hospital-logo">
+            <img src=".\banner.jpg" alt="hospital-logo">
+        </div>
+
+    </div>
+    <!-- Search Body End -->
+    <!-- Footer start -->
+
+    <footer>
+        <div class="container flex footer-container">
+            <a href="#" class="company-logo">
+                <img src="logo112.png" alt="company logo">
+            </a>
+            <div class="link-column flex">
+                <h4>Product</h4>
+                <a href="#" class="hover-links">Overview</a>
+                <a href="#" class="hover-links">Services</a>
+                <a href="#" class="hover-links">Usability</a>
+                <a href="#" class="hover-links">Customer Page</a>
+                <a href="#" class="hover-links">Status Page</a>
+            </div>
+            <div class="link-column flex">
+                <h4>Sorting</h4>
+                <a href="#" class="hover-links">Prototype</a>
+                <a href="#" class="hover-links">First click tests</a>
+                <a href="#" class="hover-links">Preference</a>
+                <a href="#" class="hover-links">Give surveys</a>
+
+            </div>
+            <div class="link-column flex">
+                <h4>Resources</h4>
+                <a href="#" class="hover-links">Blog</a>
+                <a href="#" class="hover-links">Testing guides</a>
+                <a href="#" class="hover-links">Help center</a>
+                <a href="#" class="hover-links">Contact</a>
+                <a href="#" class="hover-links">Careers</a>
+            </div>
+        </div>
+    </footer>
+    <!-- subfooter Start -->
+    <div class="subfooter">
+        <div class="container flex subfooter-container">
+            <a href="#" class="hover-links">Privacy Policy</a>
+            <a href="#" class="hover-links">Terms & Conditions</a>
+            <a href="#" class="hover-links">Security information</a>
+            <a href="#" class="hover-links"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="hover-links"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="hover-links"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="hover-links"><i class="fa-brands fa-youtube"></i></a>
+
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+
+    <script src="searcharea.js"></script>
+    <script src="https://kit.fontawesome.com/e1f68ae252.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
